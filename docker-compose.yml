@@ -9,3 +9,4 @@ services:
     tty: true
     volumes:
       - ${SRC_PATH}:/root/workspace
+    command: python ./manage.py runserver 0.0.0.0:8000
