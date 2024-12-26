@@ -1,0 +1,11 @@
+services:
+  django_container:
+    container_name: django_app
+    build:
+      context: ./container
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000 
+    tty: true
+    volumes:
+      - ${SRC_PATH}:/root/workspace
